@@ -13,4 +13,11 @@ public class UpgenixMainPage {
 
     @FindBy(className = "oe_topbar_name")
     public WebElement userName;
+
+    @FindBy(xpath = "//a[@data-menu='logout']")
+    public WebElement logout;
+
+    @FindBy(xpath = "//div[@class='o_dialog_warning modal-body']" )
+    public WebElement sessionExpired;
+
 }
